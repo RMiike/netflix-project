@@ -1,2 +1,4 @@
-# netflix-project
-pequena réplica com react
+# Netflix-Project
+
+
+Pequeno projeto com react.
