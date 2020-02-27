@@ -12,7 +12,7 @@ import '../css/TabsNav.css'
 
 class TabComponent extends Component {
     state={
-        tabIndex: 2
+        tabIndex: 0
     }
     render() {
         return (

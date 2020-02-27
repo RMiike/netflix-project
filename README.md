@@ -14,3 +14,9 @@ Utilizei react-tabs para auxiliar na implementação das tabs, bem como arquivos
 ## Content
 
 Optei por separar as contents em 3 functions e as coloquei na contentprincipal, de forma que elas se alternam de acordo com a tab que é selecionada.
+
+## Footer
+
+Optei por links e um botão de linguagem, utilizando toggle para que este abra com as linguagens.
+
+##
