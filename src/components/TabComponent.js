@@ -3,11 +3,16 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import TabDoor from './tabs_nav/TabDoor.js';
 import TabDevices from './tabs_nav/TabDevices.js';
 import TabPrice from './tabs_nav/TabPrice.js';
+// Tabs Conttent
+
+import TabContentOne from './TabContentOne.js';
+import TabContentTwo from './TabContentTwo';
+import TabContentThree from './TabContentThree';
 import '../css/TabsNav.css'
 
 class TabComponent extends Component {
     state={
-        tabIndex: 0
+        tabIndex: 2
     }
     render() {
         return (
@@ -29,6 +34,17 @@ class TabComponent extends Component {
                            <p><strong>Pick your price</strong></p>
                         </Tab>
                     </TabList>
+                    {/* Tabs Content */}
+
+                    <TabPanel>
+                        <TabContentOne/>
+                    </TabPanel>
+                    <TabPanel>
+                        <TabContentTwo/>
+                    </TabPanel>
+                    <TabPanel>
+                        <TabContentThree/>
+                    </TabPanel>
                 </Tabs>
             </div>
         );
