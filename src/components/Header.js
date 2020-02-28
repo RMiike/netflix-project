@@ -20,10 +20,12 @@ class Header extends Component {
                 <div className='header-content'>
                     <Title>See what's next.</Title>
                     <SubTitle>WATCH ANYWHERE. CANCEL ANYTIME.</SubTitle>
-                    <Button className='main-offer-btn' primary >
-                        TRY IT NOW
+                    <Link to='/chooseplan'>
+                        <Button className='main-offer-btn' primary >
+                            TRY IT NOW
                         <Icon className='Icon' icon={ic_chevron_right} size={37} />
-                    </Button>
+                        </Button>
+                    </Link>
                 </div>
             </HeaderContainer>
         );

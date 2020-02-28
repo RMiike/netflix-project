@@ -5,6 +5,8 @@ import { Icon } from 'react-icons-kit'
 import {ic_check as check} from 'react-icons-kit/md/ic_check'
 import {ic_close as cross} from 'react-icons-kit/md/ic_close'
 import { generateMedia } from "styled-media-query";
+import {Link} from 'react-router-dom'
+
 
 function TabContentThree() {
     return (
@@ -12,7 +14,9 @@ function TabContentThree() {
             <div className='tab-content'>
                 <div className='tab-top-content'>
                     <span>Choose one plan and watch everything on Netflix.</span>
+                    <Link to='/chooseplan'>
                     <Button className='btn'>Try it now</Button>
+                    </Link>
                 </div>
                 {/* tab bottom content */}
                 <div className='tab-bottom-content'>
