@@ -4,6 +4,7 @@ import { Button } from './Button';
 import { Icon } from 'react-icons-kit'
 import {ic_check as check} from 'react-icons-kit/md/ic_check'
 import {ic_close as cross} from 'react-icons-kit/md/ic_close'
+import { generateMedia } from "styled-media-query";
 
 function TabContentThree() {
     return (
@@ -90,7 +91,14 @@ function TabContentThree() {
 
 export default TabContentThree;
 
+//Media
+
+const customMedia = generateMedia({
+    lgDesktop: '1350px',
+    mdDesktop: '1000px'
+})
 //Main Container
+
 
 const TabContainer = styled.div`
     background: var(--main-deep-dark);
@@ -104,15 +112,31 @@ const TabContainer = styled.div`
         display: grid;
         grid-template-columns: repeat(12,1fr);
         padding: 3rem 0 0;
+        ${customMedia.lessThan('lgDesktop')`
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+        text-align: center;
+         
+        `}
    } 
    span{
        grid-column: 3 / 9 ;
        font-size: 1.3rem;
+       ${customMedia.lessThan('lgDesktop')`
+        grid-column: 1/ -1;
+        
+       `}
        }
    .btn{
        grid-column: 9 / 13;
        margin-left: 3rem;
        margin-right: 5.1rem;
+       ${customMedia.lessThan('mdDesktop')`
+        grid-column: 1/ -1;
+        margin-left: 30%;
+        margin-right: 30%;
+        
+       `}
    }    
    //tab bottom content
    .tab-bottom-content{

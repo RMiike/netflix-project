@@ -20,74 +20,34 @@ class Footer extends Component {
     render() {
         return (
             <FooterContainer>
-                <span style={{ marginLeft: '15%', fontSize: '1.125rem' }}>Questions? <Link>Call  0800-761-4631</Link></span>
+                <span style={{ marginLeft: '13%' }}>Questions? <Link>Call  0800-761-4631</Link></span>
                 <div className='footer-columns'>
                     <ul>
                         <li>
-                            <Link>FAQ</Link>
+                            <Link>Gift Card Terms</Link>
                         </li>
-                        <li>
-                            <Link>Investor Relations</Link>
-                        </li>
-                        <li>
-                            <Link>Ways to Watch</Link>
-                        </li>
-                        <li>
-                            <Link>Corporate Informmation</Link>
-                        </li>
-                        <li>
-                            <Link>Netflix Originals</Link>
-                        </li>
+                     
                     </ul>
                     <ul>
-                        <li>
-                            <Link>Help Center</Link>
-                        </li>
-                        <li>
-                            <Link>Jobs</Link>
-                        </li>
-                        <li>
+                                        <li>
                             <Link>Terms of Use</Link>
                         </li>
-                        <li>
-                            <Link>Contact Us</Link>
-                        </li>
-                    </ul>
+                                    </ul>
                     <ul>
+             
                         <li>
-                            <Link>Account</Link>
+                            <Link>Privacy Statement</Link>
                         </li>
-                        <li>
-                            <Link>Redeem Gift Cards</Link>
-                        </li>
-                        <li>
-                            <Link>Privacy</Link>
-                        </li>
-                        <li>
-                            <Link>Speed Test</Link>
-                        </li>
+                  
                     </ul>
-                    <ul>
-                        <li>
-                            <Link>Media Center</Link>
-                        </li>
-                        <li>
-                            <Link>Buy Gift Cards</Link>
-                        </li>
-                        <li>
-                            <Link>Cookie Preferences</Link>
-                        </li>
-                        <li>
-                            <Link>Legal Notices</Link>
-                        </li>
-                    </ul>
+                    </div>
                     {/* Language Button */}
                     <div className='lang-btn' onClick={this.handleToggle}>
                         <Icon icon={iosWorld} size={20} />
                         &nbsp; &nbsp;English&nbsp;&nbsp;
                         <Icon icon={arrowSortedDown} />
                     </div>
-                </div>
+               
                 {/* Toggle Lang Content */}
                 {this.state.langContent && (
                     <div className='lang-toggle'>
@@ -103,7 +63,7 @@ class Footer extends Component {
                         </ul>
                     </div>
                 )}
-                <span style={{ marginLeft: '15%', fontSize: '0.9rem'}}>Netflix Brasil</span>
+                <span style={{ marginLeft: '10%', fontSize: '0.9rem', marginTop: '2rem'}}>Netflix Brasil</span>
             </FooterContainer>
         );
     }
@@ -118,13 +78,19 @@ const customMedia = generateMedia({
 })
 //FooterContainer
 const FooterContainer = styled.footer`
-    background: var(--main-deep-dark);
-    paddin: 10rem 0 3rem 0;
+justify-content: center;
+
+    background: rgba(0,0,0,.8);
+    paddin: 3rem 0 6rem 0;
+    margin-top: 6rem;
     color: #999;
+    position:relative;
+    z-index:5;
     
     .footer-columns{
-        width: 75%;
-        margin: 1rem auto 2rem;
+        width: 80%;
+        margin: 1rem auto 0;
+        color:#999;
         font-size:0.9rem;
         overflow: auto;
         display: grid;
@@ -141,7 +107,15 @@ const FooterContainer = styled.footer`
     }
     a {
         color: #999;
+        font-size: 0.9rem;
     }
+
+    p{
+
+        text-decoration: underline;
+        cursor:ponter;
+    }
+
     a:hover{
         text-decoration: underline;
         cursor:pointer;
@@ -152,16 +126,17 @@ const FooterContainer = styled.footer`
         border: 0.9px solid #333;
         padding: 1rem;
         width: 10rem;
-        margin: 2rem 0 2rem;
+        color: #999;
+        margin: 2rem 0 2rem 10%;
         cursor: pointer;
         
     }
 
     //Toggle lang
     .lang-toggle{
-        margin-left: 12.4%;
+        margin-left: 10%;
         position:absolute;
-        bottom: -57.7em;
+        bottom: -1em;
 
     }
     .lang-toggle li{

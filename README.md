@@ -19,4 +19,6 @@ Optei por separar as contents em 3 functions e as coloquei na contentprincipal, 
 
 Optei por links e um botão de linguagem, utilizando toggle para que este abra com as linguagens.
 
-##
+## Mobile friendly
+
+Utilizei styled-media-query para auxiliar nessa parte para que as páginas possam se adaptar aos tamanhos de tela, de forma que não fique uma coisa 'bizarra' de se ver.
