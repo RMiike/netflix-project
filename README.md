@@ -1,4 +1,10 @@
+# Azure Url
+
+https://teste-netflix.azurewebsites.net/
+
 # Netflix-Project
+
+
 
 Primeiro passo foi organizar as pastas 'pages', 'css' e 'components', com a criação da primeira page 'index.js'.
 
